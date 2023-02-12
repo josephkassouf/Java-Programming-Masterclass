@@ -1,5 +1,4 @@
 # Inheritance vs Composition
-___
 - Inheritance defines an `IS A relationship`
 
 - Composition defines a `HAS A relationship`
