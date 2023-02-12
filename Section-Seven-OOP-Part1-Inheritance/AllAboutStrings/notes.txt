@@ -1,0 +1,34 @@
+THE STRING
+----------------------------------------------------------------
+-> The String has over 60 methods available.
+-> We can split String's methods up into 3 basic categories:
+    -> String Inspection Methods
+        -> length: number of characters in the string
+        -> charAt: Returns the character at the index that's passed
+        -> indexOf, lastIndexOf: Returns an integer, representing the index
+        -> isEmpty: Returns true if length is zero
+        -> isBlank: Returns true if length is zero OR the string only contains whitespace
+
+    -> Methods for Comparing String Values
+        -> contentEquals: Returns a boolean if the String's value is equal to the value of the
+                          argument passed. This method allows for arguments other than String,
+                          for any type that is a character sequence.
+        -> equals: Returns a boolean if the String's value is equal to the value of the argument
+                   passed.
+        -> equalsIgnoreCase: Returns a boolean if the String's value is equal (ignoring case), to
+                             the value of the argument passed.
+        -> contains
+        -> endsWith
+        -> startsWith
+        -> regionMatches
+
+    -> String Manipulation Methods
+        -> indent
+        -> strip, stripLeading, stripTrailing, trim
+        -> toLowerCase
+        -> toUpperCase
+        -> concat
+        -> join
+        -> repeat
+        -> replace, replaceAll, replaceFirst
+        -> substring, subSequence

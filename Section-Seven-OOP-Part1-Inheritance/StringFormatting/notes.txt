@@ -1,0 +1,32 @@
+WHAT'S A TEXT BLOCK
+----------------------------------------------------------------
+-> Text Block is just a special format for multi-line String literals.
+-> It's a String, with a new representation in the source code.
+-> Official as of JDK 15.
+
+SOME COMMON ESCAPE SEQUENCES
+----------------------------------------------------------------
+-> Escape sequence starts with a backslash
+
+-------------------------------------------
+| Escape Sequence | Description           |
+|------------------------------------------
+|       \t        | Insert a tab character|
+------------------------------------------|
+|       \n        | Insert a new line     |
+------------------------------------------|
+|       \"        | Insert a double quote |
+------------------------------------------|
+|       \\        | Insert a backslash    |
+------------------------------------------|
+
+EXAMPLE OF TEXT BLOCK
+String bulletIt = """
+        Print a Bulleted List:
+        \t\u2022 First Point
+        \t\u2022 Second Point""";
+
+EXAMPLE OF A FORMAT SPECIFIER
+int age = 33;
+System.out.printf("Your age is %d", age);
+

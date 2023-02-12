@@ -1,0 +1,20 @@
+STATIC VS INSTANCE METHODS
+
+STATIC METHODS
+    -> Declared using static modifier.
+    -> Static methods can't access instance methods and instant variables directly.
+    -> They're usually used for operations that don't require any data from an instance of the class (from this).
+
+    -> We can't use the "this" keyword in static methods.
+    -> Whenever you see a method that doesn't use instance variables, that method should be declared as a static method.
+    -> Static methods are called as ClassName.methodName(); or methodName(); only if in the same class.
+
+INSTANCE METHODS
+    -> Instance methods can access instance methods and instant variables directly.
+    -> Instance methods can also access static methods and static variables directly.
+
+STATIC OR INSTANCE METHODS
+    --> Should a method be static?
+        --> Does it use any fields (instance variables) or instance methods?
+            --> YES? It should probably be an instance method.
+            --> NO? It should probably be a static method.

@@ -1,0 +1,34 @@
+STATIC VARIABLES
+    -> Declared by using the keyword static.
+    -> Static variables are also known as static member variables.
+    -> Every instance of the class shares the same static variable.
+
+    -> It is considered best practice to use the Class name, and not a reference variable to access a static variable.
+        e.g.
+        class Dog {
+            static String genus = "Canis";
+
+            void printData() {
+                Dog d = new Dog();
+                System.out.println(d.genus); // Confusing
+                System.out.println(Dog.genus); // Clearer
+            }
+        }
+
+    -> An instance isn't required to exist to access the value of a static variable.
+
+    -> Static variables aren't used very often, but can sometimes be very useful.
+    -> They can be used for:
+        -> Storing counters;
+        -> Generating unique ids.
+        -> Storing a constant value that doesn't change, like PI for example.
+        -> Creating, and controlling access, to a shared resource.
+
+INSTANCE VARIABLES
+    -> They don't use the static keyword.
+    -> They're also known as fields, or member variables.
+    -> Instance variables belong to a specific instance of a class.
+
+    -> Each instance has its own copy of an instance variable.
+    -> Every instance can have a different value.
+    -> Instance variables represent the state, of a specific instance of a class.

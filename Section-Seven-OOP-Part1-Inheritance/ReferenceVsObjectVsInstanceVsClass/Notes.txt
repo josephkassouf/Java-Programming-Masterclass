@@ -1,0 +1,15 @@
+REFERENCE VS OBJECT VS INSTANCE VS CLASS
+    -> Lets use the analogy of building a house to understand classes.
+
+    -> A class is a blueprint for the house.
+
+    -> Using the blueprint, we can build as many houses as we like, based on those plans.
+
+    -> Each house is an object.
+
+    -> This object can also be known as an instance, often we'll say it's an instance of the class.
+
+    -> Each house we build has an address (a physical location)
+
+    -> In other words,if we want to tell someone where we live, we give them our address. This is known as a reference.
+        ex: House blueHouse = new House("blue"); -> blueHouse variable is a reference to the object in memory.

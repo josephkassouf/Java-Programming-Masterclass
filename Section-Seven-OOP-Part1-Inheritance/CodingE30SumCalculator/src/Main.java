@@ -1,0 +1,42 @@
+// SUM CALCULATOR EXERCISE 30
+//
+// Write a class with the name SimpleCalculator. The class needs two fields (instance variables) with
+// names firstNumber and secondNumber both of type double.
+//
+// Write the following methods (instance methods):
+//
+// Method named getFirstNumber without any parameters, it needs to return the value of firstNumber field.
+//
+// Method named getSecondNumber without any parameters, it needs to return the value of secondNumber field.
+//
+// Method named setFirstNumber with one parameter of type double, it needs to set the value of the firstNumber field.
+//
+// Method named setSecondNumber with one parameter of type double, it needs to set the value of the secondNumberfield.
+//
+// Method named getAdditionResult without any parameters, it needs to return the result of adding the field values
+// of firstNumber and secondNumber.
+//
+// Method named getSubtractionResult without any parameters, it needs to return the result of subtracting the field
+// values of secondNumber from the firstNumber.
+//
+// Method named getMultiplicationResult without any parameters, it needs to return the result of multiplying the field
+// values of firstNumber and secondNumber.
+//
+// Method named getDivisionResult without any parameters it needs to return the result of dividing the field values
+// of firstNumber by the secondNumber. In case the value of secondNumber is 0 then return 0.
+
+public class Main {
+    public static void main(String[] args) {
+
+        SimpleCalculator calculator1 = new SimpleCalculator();
+        calculator1.setFirstNumber(20);
+        calculator1.setSecondNumber(20);
+
+        System.out.println(calculator1.getAdditionResult());
+        System.out.println(calculator1.getSubtractionResult());
+        System.out.println(calculator1.getMultiplicationResult());
+        System.out.println(calculator1.getDivisionResult());
+
+    }
+
+}

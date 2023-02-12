@@ -1,0 +1,4 @@
+JAVA.LANG.OBJECT
+--------------------------------------------------------------------------------
+-> Every class you create in Java, intrinsically extends a special Java class
+-> This  class is named Object, it's in the java.lang package

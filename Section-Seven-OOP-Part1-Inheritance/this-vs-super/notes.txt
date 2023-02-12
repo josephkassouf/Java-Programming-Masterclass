@@ -1,0 +1,45 @@
+THIS VS SUPER
+
+SUPER
+----------------------------------------------------------------
+-> Used to access or call the parent class members (Variables & Methods)
+
+-> Commonly used with method overriding when we call a method with the same name from the parent class.
+
+THIS
+----------------------------------------------------------------
+-> Used to access or call the current class members (Variables & Methods)
+-> Required when we have a parameter with the same name, as an instance variable or field
+-> Use them anywhere in a class, except for static elements, likec a static method.
+    -> Will lead to compilation error
+
+-> this is commonly used with constructors & setters & optionally used in getters
+
+-> Use this() to call a constructor from another overloaded constructor in the same class.
+    -> this() can only be used in the constructor.
+    -> Must be the first statement in the constructor.
+    -> Used with constructor chaining.
+
+CONSTRUCTOR GOOD EXAMPLE
+
+class Rectangle {
+    private int x, y, width, height;
+
+    // 1st constructor
+    public Rectangle () {                                       1st constructor calls 2nd constructor, 2nd
+        this(0, 0);                                             constructor calls 3rd constructor, 3rd
+    }                                                           constructor initializes the instance variables
+
+    // 2nd constructor                                          3rd constructor does all the work
+    public Rectangle (int width, int height) {
+        this(0, 0, width, height);                              Known as constructor chaining, last constructor
+    }                                                           has the responsibility to initialize the variables.
+
+    //3rd constructor
+    public Rectangle (int x, int y, int width, int height) {
+        this.x = x;
+        this.y = y;
+        this.width = width;
+        this.height = height;
+    }
+}

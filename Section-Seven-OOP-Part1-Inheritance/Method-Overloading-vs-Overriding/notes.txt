@@ -1,0 +1,65 @@
+METHOD OVERRIDING VS OVERLOADING
+
+METHOD OVERLOADING
+----------------------------------------------------------------
+-> Means providing 2 or more separate methods, in a class with the same name,
+   but different parameters.
+
+-> Return type may or may not be different.
+-> Overloading reduces duplicate code.
+-> Overload static or instance methods.
+
+-> Each call that's made with a different set of arguments is calling a separate method.
+
+-> Java developers often refer to method overloading, as compile-time polymorphism.
+    -> Means compiler is determining the right method to call based on the method
+       name & argument list
+
+-> Overloading happens within a single class.
+-> Methods can also be overloaded by subclasses
+    -> Inherits one version of the method from the parent class
+    -> Subclass can have another overloaded version of that method.
+
+METHOD OVERLOADING RULES
+----------------------------------------------------------------
+-> Methods must have the same method name.
+-> Methods must have different parameters.
+
+If methods follow the rules above:
+-> They may or may not have different return types.
+-> They may or may not have different access modifiers.
+-> They may or may not throw different checked or unchecked exceptions.
+
+METHOD OVERRIDING
+----------------------------------------------------------------
+-> Defining a method in a child class, that already exists in the parent class, with the same
+   signature(same name & arguments)
+
+-> By extending the parent class, th child class gets all the methods defined in the parent
+   class(those methods are also known as derived methods)
+
+-> Method overriding is also known as Runtime Polymorphism, or Dynamic Method Dispatch, because
+   the method that is going ot be called, is decided at runtime, the JVM.
+
+-> When we override a method, it's recommended to put @Override, above the method.
+    -> Not required, helps the compiler flag an error, if you don't override correctly.
+
+METHOD OVERRIDING RULES
+----------------------------------------------------------------
+-> Must have the same name & same arguments.
+-> Return type can be a subclass of the return type in the parent class.
+-> It can't have a lower access modifier. In other words, it can't have more restrictive access
+   privileges
+
+-> Important points about method overriding to keep in mind.
+    -> Only inherited methods can be overridden, in other words, methods can be overridden only
+       in child classes.
+    -> Constructors & private methods cannot be overridden.
+    -> Methods that are final cannot be overridden
+    -> A subclass can use super .methodName() to call the superclass version of an overridden
+       method.
+
+COVARIANT RETURN TYPE
+----------------------------------------------------------------
+-> The return type of an overridden method can be the same as the parent method's declaration
+-> Can also be a subclass

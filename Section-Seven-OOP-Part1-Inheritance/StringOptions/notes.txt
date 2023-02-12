@@ -1,0 +1,32 @@
+STRING VS STRINGBUILDER
+----------------------------------------------------------------
+-> StringBuilder is mutable and String is not
+-> There are 4 ways to create a new StringBuilder object, using the new keyword:
+    -> Pass a string
+    -> Pass no arguments at all
+    -> Pass an Integer value
+    -> Pass some other types of characters sequence (like StringBuilder)
+
+String methods vs. StringBuilder methods
+----------------------------------------------------------------
+-> String methods create a new object in memory, and return a reference to this new object
+-> StringBuilder methods return a StringBuilder reference, but it's really a self-reference
+
+SOME METHODS UNIQUE TO THE STRINGBUILDER CLASS
+----------------------------------------------------------------
+-> StringBuilder class has many similar methods to Strings.
+-> Also had methods to remove & insert characters or strings, and truncate it's size.
+
+----------------------------------------------------------------
+| method         | description                                 |
+----------------------------------------------------------------
+| delete         | Delete a substring using indices to specify |
+| deleteCharAt   | a range, or delete a single char at an index|
+----------------------------------------------------------------
+| insert         | Insert Text at a specified position         |
+----------------------------------------------------------------
+| reverse        | Reverse order of the chars in the sequence  |
+----------------------------------------------------------------
+| setLength      | setLength used to truncate the sequence or  |
+|                | include null sequences to fill out          |
+----------------------------------------------------------------

@@ -1,0 +1,66 @@
+INHERITANCE
+--------------------------------------------------------------------------------
+-> Think of Inheritance as a  form of code re-use.
+-> A way to organize classes into a parent-child hierarchy.
+    -> Lets the child inherit fields & methods from its parent.
+
+-> The most generic class starts at the top of the hierarchy.
+-> The following CRC card is an example of a generic class
+    e.g.
+        ----------------------
+        |    Animal          |
+        |--------------------|
+        | type: String       |
+        | size: String       |
+        | weight: double     |
+        |--------------------|
+        | move(String speed) |
+        | makeNoise()        |
+        ----------------------
+                 ^
+                 |----------------------------------
+                 | Inherits                        |
+                 |                                 |
+       ----------------------            ----------------------
+       |       Dog          |            |       Fish         |
+       |--------------------|            |--------------------|
+       | earShape: String   |            |   fins:int         |
+       | tailShape: String  |            |   gills: int       |
+       | -------------------|            | -------------------|
+       | bark()             |            |   moveMuscles()    |
+       | run()              |            |   moveBackFins()   |
+       | walk()             |            ----------------------
+       | wagTail()          |
+       ----------------------
+
+EXTEND
+--------------------------------------------------------------------------------
+-> Using extend specifies the superclass of the class we're declaring
+-> Dog is a subclass of Animal
+
+Super()
+--------------------------------------------------------------------------------
+-> super() is a lot like this()
+-> A way to call a constructor on the superclass from the subclass.
+-> Like this, it has to be the first statement of the constructor.
+
+CODE RE-USE
+--------------------------------------------------------------------------------
+-> All subclasses can execute methods from the super class.
+-> Code doesn't have to be duplicated in each subclass.
+-> We can use code, from the parent.
+-> Or we can change that code for the subclass
+
+OVERRIDING A METHOD
+--------------------------------------------------------------------------------
+-> Overriding a method is when you create a method on a subclass, which has the same
+   signature as a method on a super class
+        -> Method Signature = Is the method name & the number of types & parameters
+-> You override a parent class method, when you want the child class to show different behaviour for that method
+
+POLYMORPHISM
+--------------------------------------------------------------------------------
+-> Polymorphism means 'Many Forms'
+-> Advantages to Polymorphism:
+    -> makes code simpler
+    -> Encourages code extensibility
