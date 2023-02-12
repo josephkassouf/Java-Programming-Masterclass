@@ -1,0 +1,37 @@
+READING DATA FROM THE CONSOLE
+System.in --> Like System.out, Java provides System.in which can read input from the console or terminal.
+
+System.console --> Java's solution for easier support for reading a single line and prompting user for information.
+    -> Doesn't work with I.D.E's because they disable it.
+    -> java src/Main.java to run it
+
+Command Line Arguments --> Calling the Java program and specifying data in the call.
+
+Scanner --> Scanner class was built to be a common way to read input, either using System.in or a file.
+
+
+EXCEPTION HANDLING
+--> Exception: An error that happens in code.
+--> Some types of errors can be predicted and named
+
+CATCHING AN EXCEPTION
+An exception is caught --> by creating a code block around the code, that might get the error.
+    -> This is done with the try statement code block.
+    -> try {
+        statements that might get errors
+    } catch (Exception e) {
+        code to handle the exception
+    }
+
+
+THE SCANNER CLASS
+--> Scanner class is described as a simple text scanner, which can parse primitive types and strings.
+--> To use the Scanner class, we have to create an instance of Scanner
+
+NEW KEYWORD
+--> New keyword used in what java calls, a Class instance creation expression;
+--> ClassName variableName = new ClassName();
+--> And often in many cases, we can pass parameters.
+
+INSTANTIATING SCANNER
+Scanner sc = new Scanner(System.in);

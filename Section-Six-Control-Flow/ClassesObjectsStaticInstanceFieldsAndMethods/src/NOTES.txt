@@ -1,0 +1,33 @@
+CLASS - Can be described as:
+    -> Custom data type.
+    -> Special code block that contains methods
+
+The class is a template for creating objects
+    -> It's like a empty form that gets copied and handed out
+        - e.g.
+            |----------------|
+            |    Name:___    | ->  Form is copied and handed out.
+            |  Address:___   | ->  So this is like Object creation from the class
+            |----------------|
+
+OBJECT -> An instance of a particular class.
+    -> We use object and instance interchangeably
+
+Declaring and instantiating a new object from a class
+    -> 'new' keyword: common way to create an object
+    -> 'new' keyword creates an instance, when creating an instance, set up data on that object
+
+STATIC FIELDS and INSTANCE FIELDS
+    -> STATIC FIELD
+        -> Requires 'static' keyword when declared on class
+        -> Value of the field is stored in special memory location and in only one place
+        -> Value is accessed by ClassName.fieldName
+            e.g. Integer.MAX_VALUE
+
+   -> INSTANCE FIELD
+           -> Omits 'static' keyword when declared on class
+           -> Value of the field is not allocated any memory and has no value until the object is created
+           -> Value is accessed by ObjectVariable.FieldName
+               e.g. Object.myFieldName
+
+   STATIC METHOD is to differentiate both methods.

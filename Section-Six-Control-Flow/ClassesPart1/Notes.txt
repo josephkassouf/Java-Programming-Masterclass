@@ -1,0 +1,107 @@
+WHAT IS OBJECT ORIENTED PROGRAMMING?
+    -> OOP is way too model real world objects, as software objects, which contain both data and code.
+
+CLASS-BASED PROGRAMMING
+    -> Class-based programming starts with classes, which become the blueprints for objects.
+
+STATE AND BEHAVIOUR
+    -> Real world objects have two major components:
+        -> State: Characteristics about the item that can describe it.
+        -> Behaviour: Actions that can performed by the object, or upon the object.
+
+THE CLASS AS THE BLUEPRINT
+    -> The class describes that data (fields), and the behavior (methods), that are relevant to the real world object we want to describe.
+    -> These are called class members.
+
+                        ----------------------------------------------------------------
+                        |                            CLASS                             |
+                        |   -----------------------         -----------------------    |
+                        |   |  Instance members   |         |   Static Members    |    |
+                        |   |                     |         |                     |    |
+                        |   |  Fields  | Methods  |         |  Fields  | Methods  |    |
+                        |   |                     |         |                     |    |
+                        |   -----------------------         -----------------------    |
+                        ----------------------------------------------------------------
+
+    -> A class member can be a field, or a method, or some other type of dependent element.
+    -> If a field is static, there is only one copy in memory, and this value is associated with the class.
+
+    -> If a field is not static, it's called an instance field, and each object may have a different value store for this field.
+    -> A static method can't be dependent on any one object's state, so it can't reference any instance members.
+
+ORGANIZING CLASSES
+    -> Classes can be organized into logical groupings, which are called packages.
+    -> You declare a package name in the class using the package statement.
+    -> If you don't declare a package, the class implicitly belongs to the default package.
+
+ACCESS MODIFIERS FOR THE CLASS
+    -> A class is said to be a top-level class, if it is defined in the source code file, and not enclosed in the code block of another class, type, or method.
+    -> A top-level class has only two valid access modifier options: public, private, protected, or none.
+
+    --------------------------------------------------------------------------------------
+    | Access Keyword | Description                                                       |
+    | ------------------------------------------------------------------------------------
+    | public         | public means any other class in any package can access this class |
+    |------------------------------------------------------------------------------------|
+    | protected      | protected allows classes in the same package, and any subclasses  |
+    |                | in other packages, to have access to the member.                  |
+    |----------------|-------------------------------------------------------------------|
+    |                | When modifier is omitted, this has special meaning, called package|
+    |                | access. Class is accessible only to classes in the same package.  |
+    |------------------------------------------------------------------------------------|
+    |  private       | private means that no other class can access this member          |
+    --------------------------------------------------------------------------------------
+
+ENCAPSULATION
+    -> Encapsulation has 2 meanings in OOP
+        -> Bundling of behaviour and attributes on a single object.
+        -> Hiding fields, and some methods, from public access.
+
+WHAT IS NULL?
+    -> null is a special keyword in Java, meaning the variable or attribute has a type, but no reference to an object
+    -> This means that no instance, or object, is assigned to the variable or field.
+    -> Fields with primitive data types are never null.
+
+DEFAULT VALUES FOR FIELDS ON CLASSES
+    -> Fields on classes are assigned default values, intrinsically by Java, if not assigned explicitly.
+
+    ------------------------------------------------------
+    | DATA TYPES      |   DEFAULT VALUE ASSIGNED         |
+    |----------------------------------------------------|
+    | boolean         |        false                     |
+    |----------------------------------------------------|
+    | byte            |                                  |
+    | short           |                                  |
+    | int             |          0                       |
+    | long            |                                  |
+    | char            |                                  |
+    |----------------------------------------------------|
+    | double          |         0.0                      |
+    | float           |                                  |
+    ------------------------------------------------------
+
+WHAT ARE GETTERS AND SETTERS? WHY WOULD YOU USE THEM?
+    -> A getter is a method on a class, that retrieves the value of a private field, and returns it.
+    -> A setter is a method on a class, that sets the value of a private field.
+    -> The purpose of these methods is to control, and protect, access to private fields.
+
+THIS
+    -> this is a special keyword
+    -> Refers to the instance that was created when the object was instantiated.
+    -> this is a special reference name for the object or instance, which it can use to describe itself.
+    -> use it to access fields.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
